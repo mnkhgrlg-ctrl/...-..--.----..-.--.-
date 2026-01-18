@@ -1,4 +1,4 @@
-# ...-..--.----..-.--.-
+# ONLY SUWD-ERDENE
 <!DOCTYPE html>
 <html lang="mn">
 <head>
