@@ -106,5 +106,54 @@ function fallHeart(){
 }
 </script>
 
-</body>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at top,#ff5f8a,#8b0000);
+  overflow:hidden;
+  font-family:-apple-system;
+}
+
+/* wrapper fixes centering */
+#wrapper{
+  width:200px;
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* heart */
+#box{
+  width:160px;
+  height:140px;
+  background:#ff1a1a;
+  position:relative;
+  transform:rotate(-45deg);
+  cursor:pointer;
+  animation:pulse 1.5s infinite;
+}
+
+#box:before,
+#box:after{
+  content:"";
+  width:160px;
+  height:140px;
+  background:#ff1a1a;
+  border-radius:50%;
+  position:absolute;
+}
+
+#box:before{
+  top:-70px;
+  left:0;
+}
+
+#box:after{
+  left:70px;
+  top:0;
+}
 </html>
